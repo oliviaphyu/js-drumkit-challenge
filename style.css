@@ -1,0 +1,62 @@
+:root{
+    --primary-color: #fff;
+}
+
+body{
+    height: 90vh;
+    background: url(bg-1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.keys{
+    /* border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.keys .key{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid #f3c776;
+    border-radius: 0.5rem;
+    width: 2.5rem;
+    padding: 1rem 1.8rem;
+    gap: 1rem;
+    text-align: center;
+    background-color: #276177;
+    transition: all 100ms ease-in-out;
+}
+
+.keys .key kbd{
+    font-size: 1.5rem;
+}
+
+.keys .key span{
+    text-align: center;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+.keys .key:hover{
+    /* Glowing border effect in css */
+    outline: none;
+    border: 3px solid #FFED72;
+    box-shadow: 0 0 20px #FFED72;
+}
