@@ -28,34 +28,37 @@ body{
     gap: 1rem;
 }
 
-.keys .key{
+.key{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 3px solid #f3c776;
+    border: 3px solid #276177;
     border-radius: 0.5rem;
     width: 2.5rem;
     padding: 1rem 1.8rem;
     gap: 1rem;
     text-align: center;
     background-color: #276177;
-    transition: all 100ms ease-in-out;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.07s;
 }
 
-.keys .key kbd{
+.key kbd{
     font-size: 1.5rem;
 }
 
-.keys .key span{
+.key span{
+    color: #FFED72;
     text-align: center;
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
 }
 
-.keys .key:hover{
+.playing{
     /* Glowing border effect in css */
+    transform: scale(1.1);
     outline: none;
     border: 3px solid #FFED72;
     box-shadow: 0 0 20px #FFED72;
